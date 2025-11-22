@@ -40,10 +40,10 @@ function Header() {
             Women
           </Link>
           <Link 
-            to="/kids" 
-            className={`nav-link ${isActive("/kids") ? "active" : ""}`}
+            to="/others" 
+            className={`nav-link ${isActive("/others") ? "active" : ""}`}
           >
-            Kids
+            Others
           </Link>
         </nav>
 

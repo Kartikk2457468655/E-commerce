@@ -22,7 +22,7 @@ function Main() {
         <Route path="/" element={<Home />} />
         <Route path="/men" element={<CategoryPage />} />
         <Route path="/women" element={<CategoryPage />} />
-        <Route path="/kids" element={<CategoryPage />} />
+        <Route path="/others" element={<CategoryPage />} />
         <Route path="/cart" element={<CartList />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/payment" element={<PaymentPage />} />

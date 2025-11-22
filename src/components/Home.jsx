@@ -8,7 +8,7 @@ function Home() {
         <div className="hero-content">
           <h1 className="hero-title">Fashion That Speaks Your Style</h1>
           <p className="hero-subtitle">
-            Discover the latest trends in men's, women's, and kids' fashion. 
+            Discover the latest trends in men's, women's, and other fashion. 
             Quality clothing that fits your lifestyle.
           </p>
           <Link to="/men" className="hero-cta">
@@ -35,10 +35,10 @@ function Home() {
             <h3>Women's Collection</h3>
             <p>Discover stylish women's clothing</p>
           </Link>
-          <Link to="/kids" className="category-card">
-            <div className="category-icon">👶</div>
-            <h3>Kids' Collection</h3>
-            <p>Fun and comfortable kids' wear</p>
+          <Link to="/others" className="category-card">
+            <div className="category-icon">🛍️</div>
+            <h3>Others Collection</h3>
+            <p>Explore our diverse collection</p>
           </Link>
         </div>
       </section>

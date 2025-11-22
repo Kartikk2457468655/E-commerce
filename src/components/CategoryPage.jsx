@@ -15,15 +15,15 @@ function CategoryPage() {
 
   const productSelector = useSelector((state) => state.products.items);
 
-  // Extract category from pathname
+  
   const path = location.pathname;
-  const category = path.replace(/^\//, ""); // Remove leading slash more reliably
+  const category = path.replace(/^\//, ""); 
 
-  // Map route categories to API categories
+  
   const categoryMap = {
     men: "men's clothing",
     women: "women's clothing",
-    kids: "jewelery", // fakestoreapi doesn't have kids category, using jewelry as placeholder
+    others: "jewelery", 
   };
 
   const apiCategory = categoryMap[category] || "";
@@ -39,11 +39,11 @@ function CategoryPage() {
     <div className="category-page">
       <div className="category-header">
         <h1 className="category-title">
-          {categoryTitle === "Kids" ? "Kids' Collection" : `${categoryTitle}'s Collection`}
+          {categoryTitle === "Others" ? "Others Collection" : `${categoryTitle}'s Collection`}
         </h1>
         <p className="category-subtitle">
-          {categoryTitle === "Kids" 
-            ? "Fun and comfortable kids' fashion for every occasion"
+          {categoryTitle === "Others" 
+            ? "Explore our diverse collection of other products"
             : `Discover our curated selection of ${categoryTitle.toLowerCase()}'s fashion`}
         </p>
       </div>

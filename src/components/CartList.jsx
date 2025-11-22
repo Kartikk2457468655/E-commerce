@@ -29,7 +29,7 @@ function CartList() {
               <div className="item-actions">
                 <span className="price">₹{(cartItem.price * 83).toFixed(2)}</span>
 
-                {/* QUANTITY CONTROLS */}
+                {/* * QUANTITY CONTROLS * */}
                 <div className="quantity-controls">
                   <button
                     className="qty-btn"
