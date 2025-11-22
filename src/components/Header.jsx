@@ -1,6 +1,7 @@
 import React from "react";
 import AddToCart from "./AddToCart";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 function Header() {
   const location = useLocation();
@@ -15,7 +16,8 @@ function Header() {
     <>
       <header className="header">
         <Link to="/" className="logo-link">
-          <div className="logo">NovaShop</div>
+          <img src={logo} alt="NovaShop Logo" className="logo-img" />
+          <span className="logo-text">NovaShop</span>
         </Link>
 
         <nav className="nav">
