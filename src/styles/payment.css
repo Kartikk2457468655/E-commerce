@@ -1,0 +1,69 @@
+/* Payment Page Styles */
+.payment-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.payment-tabs button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background: #f4f4f4;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.active-tab {
+  background: black !important;
+  color: white;
+}
+
+.payment-content {
+  margin-top: 20px;
+}
+
+.payment-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment-input {
+  padding: 10px 15px;
+  border: 1px solid #666;
+  border-radius: 6px;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
